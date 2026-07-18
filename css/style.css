@@ -410,28 +410,31 @@ input[type="button"]:focus {
 .menu-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-wrap: nowrap;
+  gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
+  overflow-x: auto;
 }
 
 .menu-list li {
   display: flex;
+  flex-shrink: 0;
 }
 
 .menu-list a {
   display: inline-block;
   padding: 10px 4px;
-  margin-right: 22px;
+  margin-right: 0;
   font-size: 14px;
   font-weight: 500;
   color: var(--color-text-muted);
   background-color: transparent;
   border-radius: 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .menu-list a:hover {
@@ -489,9 +492,20 @@ article time {
   border: 1px solid var(--color-border);
   border-left: 4px solid var(--color-primary);
   border-radius: var(--radius-sm);
+  box-shadow: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  margin-top: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease, margin-top 0.3s ease;
+}
+
+#weather-box.show {
+  max-height: 300px;
+  opacity: 1;
   padding: 16px 20px;
   margin-top: 12px;
-  box-shadow: none;
 }
 
 #weather-box h4 {
