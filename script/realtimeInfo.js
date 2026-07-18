@@ -54,7 +54,4 @@ async function changeCity() {
     }
 }
 
-// ⚠️ 아주 중요한 모듈 보안 규칙!
-// <script type="module"> 안에서 만든 함수는 HTML 버튼(onclick)이 직접 인식하지 못합니다.
-// 그래서 브라우저 전역(window) 공간에 이 함수를 등록해주어야 HTML의 onchange="changeCity()"가 작동합니다.
 window.changeCity = changeCity;

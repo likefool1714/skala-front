@@ -13,21 +13,21 @@
 <body>
     <div class="container">
         <header>
+            <div class="header-icon">💫</div>
             <h1>최민석의 실습 hub</h1>
             <p>저의 프로필,학습내용을 모아둔 hub입니다.</p>
         </header>
         <h3>📂바로가기 메뉴</h3>
-        <hr>
-        <nav class="shortcut-menu">
-            <p><ul class="menu-list">
+        <nav class="shortcut-menu"> 
+            <ul class="menu-list">
                 <li><a href="../html/myClass.html">나의 수업(myClass)</a></li>
                 <li><a href="../html/myHoliday.html">나의 휴일(myHoliday)</a></li>
-                <li><a href="../html/myProfile.html"">나의 프로필(myProfile)</a></li>
+                <li><a href="../html/myProfile.html">나의 프로필(myProfile)</a></li>
                 <li><a href="../html/myTrip.html">나의 여행앨범(myTrip)</a></li>
                 <li><a href="../html/signUp.html">👤회원 가입(signUp)</a></li>
-            </ul></p>
+            </ul>
         </nav>
-        <hr>
+        <br>
         <div class="main-wrapper">
             <main class="main-contents">
                 <h2>📢 오늘의 주요 소식</h2>
@@ -45,15 +45,20 @@
                     <p><strong>luv - i'm so tired🎵</strong></p>
                 </section>
                 <hr>
+                <h2>앞으로의 목표 📋</h2>
+                <section>
+                    <p>진도 나간 부분 복습하기</p>
+                    <p>출제 과제 제시간에 제출하기</p>
+                </section>
             </main>
             <aside class="sidebar">
-                <h3>⛅️ 실시간 정보</h3>
-                <p>현재 위치: 광주광역시 광산구 🚨</p>
-                <p>추천 학습 사이트 📖 : <a href="https://www.w3schools.com/">css사이트</a></p>
-                <hr>
+                <section>
+                    <h3>⛅️ 실시간 정보</h3>
+                    <p>현재 위치: 광주광역시 광산구 🚨</p>
+                    <p>추천 학습 사이트 📖 : <a href="https://www.w3schools.com/">css사이트</a></p>
+                </section>
                 <section>
                     <h3>🌤️ 실시간 세계 날씨</h3>
-                    <hr>
                     <select id="city-select" onchange="changeCity()">
                         <option value="">-- 도시를 선택하세요 --</option>
                         <option value="37.5665,126.9780">서울 (South Korea)</option>
@@ -66,15 +71,14 @@
                         도시를 선택하면 이곳에 실시간 좌표 정보가 나타납니다.
                     </div>
                 </section>
-                </section>
                 <section>
                     <h3>🕹️ 자바스크립트 모음</h3>
                     <p>upDown게임!</p>
-                    <div class="button-group">
                         <button onclick="startUpDownGame()">게임 시작</button>
-                        <button onclick="avgGrade()">성적평균 구하기</button>
-                        <button onclick="showMyBag()">가방물품 구하기</button>
-                    </div>
+                    <p>성적평균 구하기!</p>
+                        <button onclick="avgGrade()">구하기</button>
+                    <p>가방 물품 확인하기!</p>
+                        <button onclick="showMyBag()">확인하기</button>
                 </section>
             </aside>
         </div>
