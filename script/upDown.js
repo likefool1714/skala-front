@@ -11,7 +11,7 @@ function startUpDownGame() {
         let userNum = parseInt(userInput);
         count++
         if(userNum == computerNum){
-            alert(count + "번 만에 맞추셨습니다!");
+            alert("🚨 생성된 숫자: " + computerNum + " 🚨\n\n정답입니다! " + count + "번 만에 맞추셨습니다!");
             break;
         }
         else if(userNum > computerNum){
